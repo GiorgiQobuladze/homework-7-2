@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.svg">
+    <title>Myhome</title>
+</head>
+
+<body>
+    <h1>ბინები</h1>
+    <form action="https://www.myhome.ge/s/iyideba">
+        <label>გარიგების ტიპი:</label>
+        <br>
+        <input type="radio" id="sell" name="deal_types" value="1">
+        <label for="sell">იყიდება</label>
+        <br>
+        <input type="radio" id="rent" name="deal_types" value="2">
+        <label for="rent">ქირავდება</label>
+        <br>
+        <input type="radio" id="beil" name="deal_types" value="3">
+        <label for="beil">გირავდება</label>
+        <br>
+        <br>
+        <label>უძრავი ქონების ტიპი:</label>
+        <br>
+        <input type="radio" id="real" name="real_estate_types" value="1">
+        <label for="real">ბინები</label>
+        <br>
+        <input type="radio" name="real_estate_types" value="2" id="estate">
+        <label for="estate">სახლები</label>
+        <br>
+        <input type="radio" name="real_estate_types" value="4" id="types">
+        <label for="types">მიწის ნაკვეთები</label>
+        <br>
+        <br>
+        <label>ვალუტა</label>
+        <br>
+        <input type="radio" name="currency_id" value="1" id="lari">
+        <label for="lari">ლარი</label>
+        <br>
+        <input type="radio" name="currency_id" value="2" id="$">
+        <label for="$">დოლარი</label>
+        <br>
+        <br>
+        <label>ფასი (მინიმალური და მაქსიმალური)</label>
+        <br>
+        <input type="number" name="price_from" placeholder="მინ:ფასი">
+        <input type="number" name="price_to" placeholder="მაქს:ფასი">
+        <br>
+        <br>
+        <label>ფართი (კვ.მ)</label>
+        <br>
+        <input type="number" name="area_from" placeholder="მინ.">
+        <input type="number" name="area_to" placeholder="მაქს.">
+        <br>
+        <br>
+        <label>ოთახების რაოდენობა:</label>
+        <br>
+        <select name="room_types">
+            <option id="Rooms1"> 1 </option>
+            <option id="Rooms2"> 2 </option>
+            <option id="Room3"> 3 </option>
+            <option id="Rooms4"> 4 </option>
+        </select>
+        <br>
+        <br>
+        <label>ქონების სტატუსი:</label>
+        <br>
+        <input type="checkbox" name="statuses" value="2">
+        <label>ახალი აშენებული</label>
+        <br>
+        <input type="checkbox" name="statuses" value="1">
+        <label>ძველი აშენებული:</label>
+        <br>
+        <input type="checkbox" name="statuses" value="3">
+        <label> მშენებარე</label>
+        <br>
+        <br>
+        <input type="submit" value="ძებნა">
+    </form>
+
+</body>
+
+</html>
